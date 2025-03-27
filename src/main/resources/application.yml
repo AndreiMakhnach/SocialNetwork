@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/social_network_db
+    username: postgres_user
+    password: pass123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    mongodb:
+      database: social_network
+      uri: mongodb://admin:adminpassword@localhost:27017/social_network?authSource=admin
